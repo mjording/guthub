@@ -1,7 +1,6 @@
 Guthub::Application.routes.draw do
-  resources :users
-
-
+  get '/:first/:second' => 'hello#index'
+  
   resources :dishes
 
 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number: MyString
+  expiration: 2013-02-26 19:49:43
+  user_id: 1
+
+two:
+  number: MyString
+  expiration: 2013-02-26 19:49:43
+  user_id: 1

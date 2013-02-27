@@ -1,3 +1,7 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :password
+  attr_accessible :age, :name
+
+  has_one :credit_card
+  has_many :meals
+  has_many :dishes, :through => :meals
 end

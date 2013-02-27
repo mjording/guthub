@@ -1,3 +1,11 @@
 <% if @message.length > 23 %>
 	<%= @message %>
 <% end %>
+
+The sum of <%= @first %> and <%= @second %> is <%= @sum %>
+
+Thats <%= @sum.even? ? 'even' : 'odd' %>
+
+<% 1.upto(@sum + 1).each do |num| %>
+  <p> <%= num %> </p>
+<% end %>
