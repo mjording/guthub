@@ -27,6 +27,17 @@
     <%= f.label :cuisine %><br />
     <%= f.text_field :cuisine %>
   </div>
+  <% @meal.dishes.each do |dishes| %>
+    <%= f.fields_for :dishes do |dishes_form|%>
+      <div class="field">
+        <%= dishes_form.label :name %><br />
+        <%= dishes_form.text_field :name %>
+      </div>
+    <% end %>
+  <% end %>
+
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

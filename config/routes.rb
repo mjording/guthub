@@ -1,6 +1,7 @@
 Guthub::Application.routes.draw do
-  get '/:first/:second' => 'hello#index'
   
+  resources :users
+
   resources :dishes
 
 
@@ -60,7 +61,8 @@ Guthub::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'hello#index'
+  get '/:first/:second' => 'hello#index'
+  root :to => 'meals#index'
 
   # See how all your routes lay out with "rake routes"
 

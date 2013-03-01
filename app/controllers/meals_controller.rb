@@ -25,6 +25,7 @@ class MealsController < ApplicationController
   # GET /meals/new.json
   def new
     @meal = Meal.new
+    @meal.dishes << Dish.new
 
     respond_to do |format|
       format.html # new.html.erb
